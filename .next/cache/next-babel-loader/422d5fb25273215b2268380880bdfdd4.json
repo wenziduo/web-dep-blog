@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport { withRouter } from 'next/router';\nimport React from 'react';\n\nclass TaskComponent extends React.Component {\n  render() {\n    return __jsx(\"div\", null, __jsx(\"span\", null, \"task\"));\n  }\n\n}\n\nexport default withRouter(TaskComponent);","map":null,"metadata":{},"sourceType":"module"}

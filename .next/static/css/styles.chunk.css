@@ -1,0 +1,94 @@
+.layout-header {
+  width: 100%;
+  background-color: #f8f9fa !important;
+}
+.layout-header .layout-header-main {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+.layout-header .layout-header-main .layout-header-active {
+  color: #09b597 !important;
+}
+
+blockquote,
+body,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+iframe,
+legend,
+li,
+ol,
+p,
+pre,
+textarea,
+ul {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 400;
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+embed,
+iframe,
+img,
+object,
+video {
+  height: auto;
+  max-width: 100%;
+}
+audio {
+  max-width: 100%;
+}
+iframe {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+a {
+  text-decoration: none;
+}
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/
