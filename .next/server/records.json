@@ -35,21 +35,30 @@
       "static\\oEvMMR3fIBu1ouaSpRO11\\pages\\home.js": 7,
       "static\\oEvMMR3fIBu1ouaSpRO11\\pages\\post\\detail.js": 8,
       "static\\oEvMMR3fIBu1ouaSpRO11\\pages\\post\\list.js": 9,
-      "static\\oEvMMR3fIBu1ouaSpRO11\\pages\\task.js": 10
+      "static\\oEvMMR3fIBu1ouaSpRO11\\pages\\task.js": 10,
+      "static\\68wm-YDcCrPhhP_kznx1O\\pages\\_app.js": 11,
+      "static\\68wm-YDcCrPhhP_kznx1O\\pages\\_document.js": 12,
+      "static\\68wm-YDcCrPhhP_kznx1O\\pages\\_error.js": 13,
+      "static\\68wm-YDcCrPhhP_kznx1O\\pages\\about.js": 14,
+      "static\\68wm-YDcCrPhhP_kznx1O\\pages\\class.js": 15,
+      "static\\68wm-YDcCrPhhP_kznx1O\\pages\\home.js": 16,
+      "static\\68wm-YDcCrPhhP_kznx1O\\pages\\post\\detail.js": 17,
+      "static\\68wm-YDcCrPhhP_kznx1O\\pages\\post\\list.js": 18,
+      "static\\68wm-YDcCrPhhP_kznx1O\\pages\\task.js": 19
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
-      10,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
     ]
   }
 }
