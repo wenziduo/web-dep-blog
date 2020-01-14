@@ -20,10 +20,10 @@ module.exports = withCss(
           ...(typeof origExternals[0] === 'function' ? [] : origExternals)
         ]
 
-        config.module.rules.unshift({
-          test: antStyles,
-          use: 'null-loader'
-        })
+        // config.module.rules.unshift({
+        //   test: antStyles,
+        //   use: 'null-loader'
+        // })
       }
       config.module.rules.push({
         test: /\.md$/,
