@@ -2,8 +2,7 @@ import Main from '../../component/Main'
 import Link from 'next/link'
 import MarkDown from '../../component/Markdown'
 import { Row, Col, Image } from 'react-bootstrap'
-import { fetchPostDetail, fetchClassifyList, fetchPostList } from '../../api'
-import { arrGroup } from '../../utils/utils'
+import { fetchPostDetail } from '../../api'
 import moment from 'moment'
 
 class Post extends React.Component {
