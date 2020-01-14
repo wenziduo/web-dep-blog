@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env NODE_ENV=development PORT=3007 node server.js",
+    "dev": "cross-env NODE_ENV=development PORT=3008 node server.js",
     "build": "next build",
     "start": "next start -p 3008",
     "export": "npm run build && next export"
