@@ -38,7 +38,7 @@ service.interceptors.response.use(
 function request({ method = 'get', url, data }) {
   // 判断客户端还是服务端请求数据
   const isServer = typeof window === 'undefined'
-  const baseUrl = isServer ? 'http://39.105.181.82:8019' : '/api'
+  const baseUrl = 'http://39.105.181.82:8019'
   // 请求数据
   if (method === 'get' || method === 'GET') {
     return service({
