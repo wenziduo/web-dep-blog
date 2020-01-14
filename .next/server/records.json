@@ -44,21 +44,30 @@
       "static\\68wm-YDcCrPhhP_kznx1O\\pages\\home.js": 16,
       "static\\68wm-YDcCrPhhP_kznx1O\\pages\\post\\detail.js": 17,
       "static\\68wm-YDcCrPhhP_kznx1O\\pages\\post\\list.js": 18,
-      "static\\68wm-YDcCrPhhP_kznx1O\\pages\\task.js": 19
+      "static\\68wm-YDcCrPhhP_kznx1O\\pages\\task.js": 19,
+      "static\\sllQ9uSH2VfIV76jMk_Dk\\pages\\_app.js": 2,
+      "static\\sllQ9uSH2VfIV76jMk_Dk\\pages\\_document.js": 3,
+      "static\\sllQ9uSH2VfIV76jMk_Dk\\pages\\_error.js": 4,
+      "static\\sllQ9uSH2VfIV76jMk_Dk\\pages\\about.js": 5,
+      "static\\sllQ9uSH2VfIV76jMk_Dk\\pages\\class.js": 6,
+      "static\\sllQ9uSH2VfIV76jMk_Dk\\pages\\home.js": 7,
+      "static\\sllQ9uSH2VfIV76jMk_Dk\\pages\\post\\detail.js": 8,
+      "static\\sllQ9uSH2VfIV76jMk_Dk\\pages\\post\\list.js": 9,
+      "static\\sllQ9uSH2VfIV76jMk_Dk\\pages\\task.js": 10
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
+      10,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
     ]
   }
 }
