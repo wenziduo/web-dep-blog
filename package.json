@@ -1,5 +1,5 @@
 {
-  "name": "react-next",
+  "name": "web-dep-blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development PORT=3008 node server.js",
     "build": "next build",
-    "start": "next start -p 3008",
+    "start": "next build && next start -p 3008",
     "export": "npm run build && next export"
   },
   "keywords": [],
