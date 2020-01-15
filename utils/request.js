@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { notification } from 'antd'
+import { serverIp } from '../config/default'
 
 var service = axios.create({
   timeout: 5000
@@ -38,7 +39,7 @@ service.interceptors.response.use(
 function request({ method = 'get', url, data }) {
   // 判断客户端还是服务端请求数据
   const isServer = typeof window === 'undefined'
-  const baseUrl = 'http://39.105.181.82:8019'
+  const baseUrl = isServer ? `//${serverIp}/api` : '/api'
   // 请求数据
   if (method === 'get' || method === 'GET') {
     return service({
