@@ -4,6 +4,7 @@ import Main from '../component/Main'
 
 class Index extends React.Component {
   render() {
+    console.log('process.env.NODE_ENV2', process.env.NODE_ENV)
     return (
       <Main>
         <div>

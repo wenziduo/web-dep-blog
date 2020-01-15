@@ -1,12 +1,13 @@
-export const serverIp =
-  (process.env === 'production') ?
-    '39.105.181.82' :
+console.log('process.env.NODE_ENV', process.env.NODE_ENV)
+exports.serverIp =
+  (process.env.NODE_ENV === 'production') ?
+    '48.98.50.170' :
       (
-        process.env === 'test' ?
+        process.env.NODE_ENV === 'test' ?
           '48.98.50.170' :
             (
-              process.env === 'development' ?
-                '127.0.0.1' :
+              process.env.NODE_ENV === 'development' ?
+                '48.98.50.170' :
                   ''
             )
       )

@@ -1467,6 +1467,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _jsxFileName = "D:\\my-product\\web-dep-blog\\pages\\_document.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
@@ -1486,17 +1487,62 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_8___default.a {
 
   render() {
     console.log('document');
-    return __jsx("html", null, __jsx(next_document__WEBPACK_IMPORTED_MODULE_8__["Head"], null, __jsx("link", {
+    return __jsx("html", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_8__["Head"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, __jsx("link", {
       rel: "stylesheet",
       href: "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
       integrity: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T",
-      crossorigin: "anonymous"
+      crossorigin: "anonymous",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
     }), __jsx("link", {
       rel: "stylesheet",
-      href: "//at.alicdn.com/t/font_1544495_ntihtn8y06a.css"
-    }), __jsx("style", null, `body { margin: 0 } /* custom! */`)), __jsx("body", {
-      className: "custom_class"
-    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_8__["Main"], null), __jsx(next_document__WEBPACK_IMPORTED_MODULE_8__["NextScript"], null)));
+      href: "//at.alicdn.com/t/font_1544495_ntihtn8y06a.css",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }), __jsx("style", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, `body { margin: 0 } /* custom! */`)), __jsx("body", {
+      className: "custom_class",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_8__["Main"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: this
+    }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_8__["NextScript"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: this
+    })));
   }
 
 }

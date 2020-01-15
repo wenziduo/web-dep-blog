@@ -32,6 +32,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _jsxFileName = "D:\\my-product\\web-dep-blog\\component\\Header\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
 
@@ -72,39 +73,115 @@ function (_React$Component) {
 
       console.log('pathname', pathname);
       return __jsx("div", {
-        className: "layout-header"
+        className: "layout-header",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
       }, __jsx("div", {
-        className: "layout-header-main"
+        className: "layout-header-main",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
       }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["Navbar"], {
         bg: "light",
         expand: "lg",
-        role: "navigation"
+        role: "navigation",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
       }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["Navbar"].Brand, {
-        href: "/home"
+        href: "/home",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
       }, "\u9017\u513F\u74E2"), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["Navbar"].Toggle, {
-        "aria-controls": "basic-navbar-nav"
+        "aria-controls": "basic-navbar-nav",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
       }), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["Navbar"].Collapse, {
-        id: "basic-navbar-nav"
+        id: "basic-navbar-nav",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
       }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["Nav"], {
-        className: "mr-auto"
+        className: "mr-auto",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
       }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["Nav"].Link, {
         href: "/home",
-        className: pathname === '/home' ? 'layout-header-active' : ''
+        className: pathname === '/home' ? 'layout-header-active' : '',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
       }, "\u9996\u9875"), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["Nav"].Link, {
         href: "/about",
-        className: pathname === '/about' ? 'layout-header-active' : ''
+        className: pathname === '/about' ? 'layout-header-active' : '',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
       }, "\u5173\u4E8E"), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["NavDropdown"], {
         title: "\u5206\u7C7B",
         id: "basic-nav-dropdown",
-        className: pathname === '/class' ? 'layout-header-active' : ''
+        className: pathname === '/class' ? 'layout-header-active' : '',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
       }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["NavDropdown"].Item, {
-        href: "#action/3.1"
+        href: "#action/3.1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
       }, "Action"), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["NavDropdown"].Item, {
-        href: "#action/3.2"
+        href: "#action/3.2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
       }, "Another action"), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["NavDropdown"].Item, {
-        href: "#action/3.3"
-      }, "Something"), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["NavDropdown"].Divider, null), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["NavDropdown"].Item, {
-        href: "#action/3.4"
+        href: "#action/3.3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51
+        },
+        __self: this
+      }, "Something"), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["NavDropdown"].Divider, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54
+        },
+        __self: this
+      }), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["NavDropdown"].Item, {
+        href: "#action/3.4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
       }, "Separated link")))))));
     }
   }]);
@@ -566,6 +643,39 @@ function _defineProperty(obj, key, value) {
   }
 
   return obj;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
+/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
+/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
+
+function _extends() {
+  _extends = _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default.a || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
 }
 
 /***/ }),
@@ -24244,27 +24354,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MyApp; });
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _component_Header__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../component/Header */ "./component/Header/index.js");
-/* harmony import */ var nookies__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! nookies */ "./node_modules/nookies/dist/index.js");
-/* harmony import */ var nookies__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(nookies__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _public_app_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../public/app.css */ "./public/app.css");
-/* harmony import */ var _public_app_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_public_app_css__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _component_Header__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../component/Header */ "./component/Header/index.js");
+/* harmony import */ var nookies__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! nookies */ "./node_modules/nookies/dist/index.js");
+/* harmony import */ var nookies__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(nookies__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _public_app_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../public/app.css */ "./public/app.css");
+/* harmony import */ var _public_app_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_public_app_css__WEBPACK_IMPORTED_MODULE_11__);
 
 
 
 
 
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
+
+var _jsxFileName = "D:\\my-product\\web-dep-blog\\pages\\_app.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
 
 
 
@@ -24274,21 +24387,39 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 var MyApp =
 /*#__PURE__*/
 function (_App) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(MyApp, _App);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(MyApp, _App);
 
   function MyApp() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, MyApp);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, MyApp);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(MyApp).apply(this, arguments));
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(MyApp).apply(this, arguments));
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(MyApp, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(MyApp, [{
     key: "render",
     value: function render() {
       var _this$props = this.props,
           Component = _this$props.Component,
           pageProps = _this$props.pageProps;
-      return __jsx(next_app__WEBPACK_IMPORTED_MODULE_6__["Container"], null, __jsx(_component_Header__WEBPACK_IMPORTED_MODULE_8__["default"], pageProps), __jsx(Component, pageProps), __jsx("div", {
+      return __jsx(next_app__WEBPACK_IMPORTED_MODULE_7__["Container"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }, __jsx(_component_Header__WEBPACK_IMPORTED_MODULE_9__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, pageProps, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      })), __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, pageProps, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      })), __jsx("div", {
         className: "layout-footer",
         style: {
           textAlign: 'center',
@@ -24298,8 +24429,19 @@ function (_App) {
           fontSize: 13,
           color: '#333',
           backgroundColor: '#f8f9fa'
-        }
-      }, __jsx("span", null, "Copyright \xA9 2017 - 2027 \u9017\u513F\u74E2\u4E2A\u4EBA\u535A\u5BA2")));
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }, __jsx("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, "Copyright \xA9 2017 - 2027 \u9017\u513F\u74E2\u4E2A\u4EBA\u535A\u5BA2")));
     }
   }], [{
     key: "getInitialProps",
@@ -24314,7 +24456,7 @@ function (_App) {
               cookies = {}; // console.log('ctx.isServer', ctx.isServer)
 
               if (ctx.isServer) {
-                cookies = Object(nookies__WEBPACK_IMPORTED_MODULE_9__["parseCookies"])(ctx);
+                cookies = Object(nookies__WEBPACK_IMPORTED_MODULE_10__["parseCookies"])(ctx);
               }
 
               if (!Component.getInitialProps) {
@@ -24347,7 +24489,7 @@ function (_App) {
   }]);
 
   return MyApp;
-}(next_app__WEBPACK_IMPORTED_MODULE_6___default.a);
+}(next_app__WEBPACK_IMPORTED_MODULE_7___default.a);
 
 
 

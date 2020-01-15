@@ -1,7 +1,7 @@
 //server.js
 var express = require('express')
 var next = require('next')
-import { serverIp } from './config/default'
+const { serverIp } = require('./config/default')
 
 const devProxy = {
   '/api': {
@@ -13,8 +13,9 @@ const devProxy = {
 
 const port = parseInt(process.env.PORT, 10) || 3000
 const env = process.env.NODE_ENV
-// const dev = env !== 'production'
-const dev = true
+console.log('env', env)
+const dev = env !== 'production'
+// const dev = true
 const app = next({
   dir: '.', // base directory where everything is, could move to src later
   dev
@@ -29,7 +30,7 @@ app
     server = express()
 
     // Set up the proxy.
-    if (dev && devProxy) {
+    if (devProxy) {
       const proxyMiddleware = require('http-proxy-middleware')
       Object.keys(devProxy).forEach(function(context) {
         server.use(proxyMiddleware(context, devProxy[context]))
