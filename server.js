@@ -2,10 +2,10 @@
 var express = require('express')
 var next = require('next')
 const { serverIp } = require('./config/default')
-
+console.log('serverIp', serverIp)
 const devProxy = {
   '/api': {
-    target: `//${serverIp}/api`, // 目标服务器 host
+    target: `http://${serverIp}/api`, // 目标服务器 host
     pathRewrite: { '^/api': '/' }, // 重写请求，比如我们源访问的是api/login，那么请求会被解析为/www/login
     changeOrigin: true // 默认false，是否需要改变原始主机头为目标URL
   }
