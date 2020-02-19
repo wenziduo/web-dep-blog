@@ -14,7 +14,7 @@ const devProxy = {
 const env = process.env.NODE_ENV
 console.log('env', env)
 const dev = env !== 'production'
-const port = dev ? 3008 : 3002
+const port = dev ? 3002 : 3008
 // const dev = true
 const app = next({
   dir: '.', // base directory where everything is, could move to src later
