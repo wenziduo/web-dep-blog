@@ -43,8 +43,6 @@ class TableComponent extends React.Component {
       ceshi2: item.children[1].children[0].value,
       ceshi3: item.children[2].children[0].value
     }))
-    // 最终打印的结果
-    console.log('dataSouce', dataSouce)
   }
   render() {
     return (

@@ -21,6 +21,10 @@ class MyContainer extends React.Component {
       newPosList: resPostList.data || []
     })
   }
+  static async getInitialProps({ Component, router, ctx }) {
+    console.log('9999999999999999999999999999999999999999999999999')
+    console.log('9999999999999999999999999999999999999999999999999')
+  }
   render() {
     const { classifyData, newPosList } = this.state
     return (

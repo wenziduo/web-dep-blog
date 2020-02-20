@@ -24,7 +24,6 @@ service.interceptors.response.use(
         description: res.message
       })
     }
-    console.log('response', response)
     return res
   },
   function(error) {

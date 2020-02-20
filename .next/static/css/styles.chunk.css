@@ -2397,8 +2397,6 @@ html {
 .layout-container .layout-container-left {
   width: 100%;
   padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
 }
 @media screen and (max-width: 1000px) {
   .layout-container div.layout-container-right {
@@ -2491,9 +2489,6 @@ html {
   font-size: 14px;
 }
 
-.markdown-layout-outer {
-  flex: 1;
-}
 .markdown-layout-outer blockquote,
 .markdown-layout-outer body,
 .markdown-layout-outer dd,

@@ -17,30 +17,12 @@ import './index.less'
 // })
 
 class MarkdownComponent extends React.Component {
-  state = {
-    isWindow: false
-  }
-  componentDidMount() {
-    // this.loadComponent()
-  }
-  loadComponent = async () => {
-    const ReactMarkdown = await import('react-markdown')
-    const htmlParser = await import('react-markdown/plugins/html-parser')
-    this.ReactMarkdown = ReactMarkdown.default
-    this.htmlParser = htmlParser.default
-    this.setState({ isWindow: true })
-  }
   render() {
-    const { isWindow } = this.state
-    console.log('isWindow', isWindow)
-    // const { ReactMarkdown, htmlParser } = this
-    // console.log('ReactMarkdown', ReactMarkdown)
     return (
       <div className="markdown-layout-outer">
         <ReactMarkdown
           className="md-editor-markdown"
           source={this.props.dataSouce || null}
-          // source={AppMarkdown}
           escapeHtml={false}
           renderers={{
             code: CodeBlock,
