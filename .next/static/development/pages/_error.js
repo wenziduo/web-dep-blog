@@ -2200,7 +2200,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 2:
 /*!***************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=D%3A%5Cmy-product%5Cweb-dep-blog%5Cpages%5C_error.js ***!
   \***************************************************************************************************************************/
@@ -2223,5 +2223,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_error.js.map

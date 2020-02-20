@@ -2,6 +2,8 @@ import React from 'react'
 import AppMarkdown from '../../public/test.md'
 import CodeBlock from '../CodeBlock'
 import HeadingBlock from '../HeadingBlock'
+import ReactMarkdown from 'react-markdown'
+import htmlParser from 'react-markdown/plugins/html-parser'
 import './index.less'
 // import Aaa from 'react-markdown'
 // console.log('Aaa', Aaa)
@@ -19,7 +21,7 @@ class MarkdownComponent extends React.Component {
     isWindow: false
   }
   componentDidMount() {
-    this.loadComponent()
+    // this.loadComponent()
   }
   loadComponent = async () => {
     const ReactMarkdown = await import('react-markdown')
@@ -31,25 +33,20 @@ class MarkdownComponent extends React.Component {
   render() {
     const { isWindow } = this.state
     console.log('isWindow', isWindow)
-    const { ReactMarkdown, htmlParser } = this
-    console.log('ReactMarkdown', ReactMarkdown)
+    // const { ReactMarkdown, htmlParser } = this
+    // console.log('ReactMarkdown', ReactMarkdown)
     return (
       <div className="markdown-layout-outer">
-        {
-          isWindow && this.props.dataSouce
-        }
-        {/* {isWindow && (
-          <ReactMarkdown
-            className="md-editor-markdown"
-            source={this.props.dataSouce || null}
-            // source={AppMarkdown}
-            escapeHtml={false}
-            renderers={{
-              code: CodeBlock,
-              heading: HeadingBlock
-            }}
-          />
-        )} */}
+        <ReactMarkdown
+          className="md-editor-markdown"
+          source={this.props.dataSouce || null}
+          // source={AppMarkdown}
+          escapeHtml={false}
+          renderers={{
+            code: CodeBlock,
+            heading: HeadingBlock
+          }}
+        />
       </div>
     )
   }
