@@ -35,7 +35,10 @@ class MarkdownComponent extends React.Component {
     console.log('ReactMarkdown', ReactMarkdown)
     return (
       <div className="markdown-layout-outer">
-        {isWindow && (
+        {
+          this.props.dataSouce
+        }
+        {/* {isWindow && (
           <ReactMarkdown
             className="md-editor-markdown"
             source={this.props.dataSouce || null}
@@ -46,7 +49,7 @@ class MarkdownComponent extends React.Component {
               heading: HeadingBlock
             }}
           />
-        )}
+        )} */}
       </div>
     )
   }
