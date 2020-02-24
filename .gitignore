@@ -1,5 +1,7 @@
 logs/
+.next
 .next/
+build/
 out/
 npm-debug.log
 yarn-error.log

@@ -1,1 +1,0 @@
-{"ast":null,"code":"export function arrGroup(array, subGroupLength) {\n  var index = 0;\n  var newArray = [];\n\n  while (index < array.length) {\n    newArray.push(array.slice(index, index += subGroupLength));\n  }\n\n  return newArray;\n}","map":null,"metadata":{},"sourceType":"module"}
