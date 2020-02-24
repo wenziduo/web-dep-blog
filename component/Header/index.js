@@ -1,20 +1,15 @@
 import React from 'react'
-import Link from 'next/link'
 import { withRouter } from 'next/router'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import './index.less'
 
 class Header extends React.Component {
-  // componentDidMount() {
-  //   const { router } = this.props
-  //   router.prefetch('/about')
-  // }
   handleGo = record => {
     this.props.router.push(record.path)
   }
   render() {
     const { pathname } = this.props.router || {}
-    console.log('pathname', pathname)
+    const { classifyList } = this.props
     return (
       <div className="layout-header">
         <div className="layout-header-main">
@@ -44,17 +39,16 @@ class Header extends React.Component {
                     pathname === '/class' ? 'layout-header-active' : ''
                   }
                 >
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                  </NavDropdown.Item>
+                  {
+                    classifyList.map(item =>
+                      <NavDropdown.Item
+                        key={item._id}
+                        href={`/post/list?classifyId=${item._id}`}
+                      >
+                        {item.title}&nbsp;({item.count})
+                      </NavDropdown.Item>
+                    )
+                  }
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>

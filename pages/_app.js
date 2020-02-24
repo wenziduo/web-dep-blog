@@ -2,6 +2,8 @@ import App, { Container } from 'next/app'
 import React from 'react'
 import Header from '../component/Header'
 import { parseCookies } from 'nookies'
+import Main from '../component/Main'
+import { fetchClassifyList, fetchPostList } from '../api'
 import '../public/app.css'
 
 export default class MyApp extends App {
@@ -15,6 +17,10 @@ export default class MyApp extends App {
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps({ ctx, router, cookies })
     }
+    const resClassifyList = await fetchClassifyList()
+    const resPostList = await fetchPostList({ length: 5 })
+    pageProps.classifyList = resClassifyList.data || []
+    pageProps.postList = resPostList.data || []
     return { pageProps }
   }
 
@@ -23,7 +29,9 @@ export default class MyApp extends App {
     return (
       <Container>
         <Header {...pageProps} />
-        <Component {...pageProps} />
+        <Main {...pageProps}>
+          <Component {...pageProps} />
+        </Main>
         <div
           className="layout-footer"
           style={{

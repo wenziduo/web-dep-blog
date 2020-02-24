@@ -32,7 +32,7 @@ class CodeBlock extends PureComponent {
     PrismLight.registerLanguage('jsx', jsx)
     PrismLight.registerLanguage('javascript', javascript)
     this.SyntaxHighlighter = PrismLight
-    console.log('prism.coy', prism.coy)
+    // console.log('prism.coy', prism.coy)
     this.coy = prism.coy
     this.docco = hljs.docco
     this.setState({ isWindow: true })

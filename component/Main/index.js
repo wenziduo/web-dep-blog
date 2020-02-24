@@ -1,32 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-import { OverlayTrigger, Image, Tooltip, Row, Col } from 'react-bootstrap'
+import { Image } from 'react-bootstrap'
 import moment from 'moment'
-import { fetchClassifyList, fetchPostList } from '../../api'
-import { arrGroup } from '../../utils/utils'
 import './index.less'
 class MyContainer extends React.Component {
-  state = {
-    classifyData: [],
-    newPosList: []
-  }
-  componentDidMount() {
-    this.handleLoadClassify()
-  }
-  handleLoadClassify = async () => {
-    const resClassifyList = await fetchClassifyList()
-    const resPostList = await fetchPostList()
-    this.setState({
-      classifyData: resClassifyList.data,
-      newPosList: resPostList.data || []
-    })
-  }
-  static async getInitialProps({ Component, router, ctx }) {
-    console.log('9999999999999999999999999999999999999999999999999')
-    console.log('9999999999999999999999999999999999999999999999999')
-  }
   render() {
-    const { classifyData, newPosList } = this.state
+    const { classifyList, postList } = this.props
     return (
       <div className="layout-container">
         <div className="layout-container-left">{this.props.children}</div>
@@ -34,7 +13,7 @@ class MyContainer extends React.Component {
           <div>
             <h4 className="layout-container-right-title">最新文章</h4>
             <ul className="layout-container-right-ul">
-              {newPosList.map(item => (
+              {postList.map(item => (
                 <li key={item._id}>
                   <div style={{ minWidth: 125 }}>
                     <Image
@@ -86,7 +65,7 @@ class MyContainer extends React.Component {
           <div>
             <h4 className="layout-container-right-title">分类</h4>
             <ul className="layout-container-right-ul">
-              {classifyData.map((item, index) => (
+              {classifyList.map((item, index) => (
                 <li key={index}>
                   <Link
                     href={{

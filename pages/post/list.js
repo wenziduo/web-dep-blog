@@ -1,7 +1,7 @@
 import React from 'react'
 import moment from 'moment'
 import Link from 'next/link'
-import Main from '../../component/Main'
+// import Main from '../../component/Main'
 import { ListGroup, Image, Row, Col } from 'react-bootstrap'
 import { fetchPostList } from '../../api'
 
@@ -16,7 +16,7 @@ class PostList extends React.Component {
     const { dataList = [] } = this.props
     return (
       <div>
-        <Main>
+        <div>
           <ListGroup variant="flush">
             {dataList.map(item => (
               <ListGroup.Item key={item._id}>
@@ -82,7 +82,7 @@ class PostList extends React.Component {
               </ListGroup.Item>
             ))}
           </ListGroup>
-        </Main>
+        </div>
       </div>
     )
   }

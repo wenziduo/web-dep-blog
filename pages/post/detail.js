@@ -1,4 +1,4 @@
-import Main from '../../component/Main'
+// import Main from '../../component/Main'
 import Link from 'next/link'
 import MarkDown from '../../component/Markdown'
 import { Row, Col, Image } from 'react-bootstrap'
@@ -18,7 +18,7 @@ class Post extends React.Component {
   render() {
     const { postDetail } = this.props
     return (
-      <Main>
+      <div>
         <div style={{ paddingTop: 20 }}>
           <h3 style={{ textAlign: 'center', fontSize: 16, fontWeight: 700 }}>
             {postDetail.title}
@@ -146,7 +146,7 @@ class Post extends React.Component {
             </Row>
           </div>
         )}
-      </Main>
+      </div>
     )
   }
 }
