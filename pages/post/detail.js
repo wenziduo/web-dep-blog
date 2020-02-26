@@ -67,7 +67,7 @@ class Post extends React.Component {
             </div>
           )}
         </div>
-        <div style={{ marginTop: 20 }}>
+        <div style={{ marginTop: 20, padding: '0 10px' }}>
           {postDetail.nextData.length > 0 && (
             <div>
               <span>下一篇：</span>
@@ -85,7 +85,7 @@ class Post extends React.Component {
           )}
         </div>
         {postDetail.guessData.length > 0 && (
-          <div style={{ marginTop: 20 }}>
+          <div style={{ marginTop: 20, padding: '0 10px' }}>
             <h3 style={{ color: '#09b597', fontWeight: 700, marginBottom: 6 }}>猜你喜欢</h3>
             <hr />
             <div style={{ marginTop: 20, padding: '0 15px' }}>
@@ -101,9 +101,7 @@ class Post extends React.Component {
                       <Image
                         src={item.imgUrl}
                         thumbnail
-                        width={80}
-                        height={80}
-                        style={{ cursor: 'pointer', flexShrink: 0 }}
+                        style={{ cursor: 'pointer', flexShrink: 0, width: 80, height: 80 }}
                       />
                     </Link>
                     <div style={{ flexShrink: 1, paddingLeft: 8 }}>
