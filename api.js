@@ -3,7 +3,7 @@ import request from './utils/request'
 export const fetchPostDetail = async function(data = {}) {
   return await request({
     method: 'get',
-    url: '/post/detail',
+    url: '/blog/post/detail',
     data
   })
 }
@@ -11,7 +11,7 @@ export const fetchPostDetail = async function(data = {}) {
 export const fetchPostList = async function(data = {}) {
   return await request({
     method: 'get',
-    url: '/post/find',
+    url: '/blog/post/find',
     data
   })
 }
@@ -19,7 +19,7 @@ export const fetchPostList = async function(data = {}) {
 export const fetchClassifyList = async function(data = {}) {
   return await request({
     method: 'get',
-    url: '/classify/find',
+    url: '/blog/classify/find',
     data
   })
 }
