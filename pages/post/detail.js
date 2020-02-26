@@ -88,7 +88,7 @@ class Post extends React.Component {
           <div style={{ marginTop: 20, padding: '0 10px' }}>
             <h3 style={{ color: '#09b597', fontWeight: 700, marginBottom: 6 }}>猜你喜欢</h3>
             <hr />
-            <div style={{ marginTop: 20, padding: '0 15px' }}>
+            <div style={{ marginTop: 20, padding: '0 10px' }}>
               {postDetail.guessData.map(item => (
                 <div key={item._id} style={{ marginTop: 10 }}>
                   <div style={{ flex: 1, display: 'flex' }}>
