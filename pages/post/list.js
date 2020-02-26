@@ -7,7 +7,7 @@ import { fetchPostList } from '../../api'
 
 class PostList extends React.Component {
   static async getInitialProps({ ctx: { pathname, query } }) {
-    const res = await fetchPostList({ classifyId: query.classifyId })
+    const res = await fetchPostList({ classifyId: query.classifyId, textLength: 200 })
     return {
       dataList: res.data || []
     }
@@ -20,8 +20,8 @@ class PostList extends React.Component {
           <ListGroup variant="flush">
             {dataList.map(item => (
               <ListGroup.Item key={item._id}>
-                <Row>
-                  <Col xs={3}>
+                <div style={{ display: 'flex' }}>
+                  <div>
                     <Link
                       href={{
                         pathname: '/post/detail',
@@ -31,13 +31,11 @@ class PostList extends React.Component {
                       <Image
                         src={item.imgUrl}
                         thumbnail
-                        width={200}
-                        height={200}
-                        style={{ cursor: 'pointer' }}
+                        style={{ cursor: 'pointer', width: 100, height: 100 }}
                       />
                     </Link>
-                  </Col>
-                  <Col xs={7}>
+                  </div>
+                  <div style={{ flex: 1, marginLeft: 5 }}>
                     <h3>
                       <Link
                         href={{
@@ -64,7 +62,17 @@ class PostList extends React.Component {
                           query: { id: item._id }
                         }}
                       >
-                        <span style={{ cursor: 'pointer' }}>{item.text}</span>
+                        <span
+                          style={{
+                            cursor: 'pointer',
+                            letterSpacing: 0,
+                            overflow: 'hidden', /*超出部分隐藏*/
+                            textOverflow: 'ellipsis', /*文字超出部分以省略号显示*/
+                            display: '-webkit-box',
+                            WebkitBoxOrient: 'vertical',
+                            WebkitLineClamp: 3,
+                          }}
+                        >{item.text}</span>
                       </Link>
                     </p>
                     <p style={{ textAlign: 'right', color: '#777' }}>
@@ -77,8 +85,8 @@ class PostList extends React.Component {
                         {item.watch}
                       </span>
                     </p>
-                  </Col>
-                </Row>
+                  </div>
+                </div>
               </ListGroup.Item>
             ))}
           </ListGroup>
