@@ -86,11 +86,11 @@ class Post extends React.Component {
         </div>
         {postDetail.guessData.length > 0 && (
           <div style={{ marginTop: 20 }}>
-            <h3 style={{ color: '#09b597', fontWeight: 700 }}>猜你喜欢</h3>
+            <h3 style={{ color: '#09b597', fontWeight: 700, marginBottom: 6 }}>猜你喜欢</h3>
             <hr />
-            <Row style={{ marginTop: 20, padding: '0 15px' }}>
+            <div style={{ marginTop: 20, padding: '0 15px' }}>
               {postDetail.guessData.map(item => (
-                <Col xs={3} key={item._id}>
+                <div key={item._id} style={{ marginTop: 10 }}>
                   <div style={{ flex: 1, display: 'flex' }}>
                     <Link
                       href={{
@@ -136,14 +136,14 @@ class Post extends React.Component {
                             display: 'inline'
                           }}
                         >
-                          {(item.text || '').slice(0, 20)}
+                          {(item.text || '').slice(0, 60)}
                         </span>
                       </div>
                     </div>
                   </div>
-                </Col>
+                </div>
               ))}
-            </Row>
+            </div>
           </div>
         )}
       </div>
