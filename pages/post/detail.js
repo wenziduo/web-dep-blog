@@ -52,7 +52,7 @@ class Post extends React.Component {
         <MarkDown dataSouce={postDetail.content} />
         <div>
           {postDetail.prevData.length > 0 && (
-            <div style={{ marginTop: 20 }}>
+            <div style={{ marginTop: 20, padding: '0 10px' }}>
               <span>上一篇：</span>
               <Link
                 href={{
@@ -97,6 +97,7 @@ class Post extends React.Component {
                         pathname: '/post/detail',
                         query: { id: item._id }
                       }}
+                      style={{ cursor: 'pointer', }}
                     >
                       <Image
                         src={item.imgUrl}
@@ -112,30 +113,36 @@ class Post extends React.Component {
                             query: { id: item._id }
                           }}
                         >
-                          <span
+                          <strong
                             style={{
-                              fontSize: 13,
+                              fontSize: 14,
                               color: '#09b597',
                               cursor: 'pointer',
-                              lineHeight: '15px !import',
+                              // lineHeight: '15px !import',
                               display: 'inline'
                             }}
                           >
                             {item.title}
-                          </span>
+                          </strong>
                         </Link>
                       </div>
                       <div>
-                        <span
-                          style={{
-                            fontSize: 10,
-                            color: '#999',
-                            // lineHeight: '15px',
-                            display: 'inline'
+                        <Link
+                          href={{
+                            pathname: '/post/detail',
+                            query: { id: item._id }
                           }}
                         >
-                          {(item.text || '').slice(0, 60)}
-                        </span>
+                          <span
+                            style={{
+                              fontSize: 10,
+                              color: '#999',
+                              lineHeight: '12px !import',
+                              display: 'inline',
+                              cursor: 'pointer',
+                            }}
+                          >{(item.text || '').slice(0, 60)}</span>
+                        </Link>
                       </div>
                     </div>
                   </div>
