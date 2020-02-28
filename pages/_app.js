@@ -18,7 +18,7 @@ export default class MyApp extends App {
       pageProps = await Component.getInitialProps({ ctx, router, cookies })
     }
     const resClassifyList = await fetchClassifyList()
-    const resPostList = await fetchPostList({ length: 5 })
+    const resPostList = await fetchPostList()
     pageProps.classifyList = resClassifyList.data || []
     pageProps.postList = resPostList.data || []
     return { pageProps }
