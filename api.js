@@ -11,7 +11,15 @@ export const fetchPostDetail = async function(data = {}) {
 export const fetchPostList = async function(data = {}) {
   return await request({
     method: 'get',
-    url: '/blog/post/find',
+    url: '/blog/post/findList',
+    data
+  })
+}
+// 请求最新文章列表
+export const fetchPostNewList = async function(data = {}) {
+  return await request({
+    method: 'get',
+    url: '/blog/post/findNewList',
     data
   })
 }
