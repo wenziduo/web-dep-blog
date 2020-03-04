@@ -30,7 +30,7 @@ class Post extends React.Component {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              marginTop: 15
+              marginTop: 10
             }}
           >
             <span>
@@ -50,7 +50,9 @@ class Post extends React.Component {
             </span>
           </h4>
         </div>
-        <MarkDown dataSouce={postDetail.content} />
+        <div style={{ marginTop: 10 }}>
+          <MarkDown dataSouce={postDetail.content} />
+        </div>
         <div>
           {postDetail.prevData.length > 0 && (
             <div style={{ marginTop: 20, padding: '0 10px' }}>
@@ -87,7 +89,7 @@ class Post extends React.Component {
         </div>
         {postDetail.guessData.length > 0 && (
           <div style={{ marginTop: 20, padding: '0 10px' }}>
-            <h3 style={{ color: '#09b597', fontWeight: 700, marginBottom: 6 }}>猜你喜欢</h3>
+            <div style={{ color: '#09b597', marginBottom: 6, fontSize: 15 }}><strong>猜你喜欢</strong></div>
             <hr />
             <div style={{ marginTop: 20, padding: '0 10px' }}>
               {postDetail.guessData.map(item => (

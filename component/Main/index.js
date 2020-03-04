@@ -15,17 +15,22 @@ class MyContainer extends React.Component {
             <ul className="layout-container-right-ul">
               {postList.map(item => (
                 <li key={item._id}>
-                  <div style={{ minWidth: 125 }}>
-                    <Image
-                      width={110}
-                      height={110}
-                      rounded
-                      // roundedCircle
-                      thumbnail
-                      style={{ float: 'left' }}
-                      alt="171x180"
-                      src={item.imgUrl}
-                    />
+                  <div style={{ minWidth: 100 }}>
+                    <Link
+                      passHref
+                      href={{
+                        pathname: '/post/detail',
+                        query: { id: item._id }
+                      }}
+                    >
+                      <Image
+                        style={{ float: 'left', cursor: 'pointer', width: 90, height: 90 }}
+                        rounded
+                        thumbnail
+                        alt="图片加载失败"
+                        src={item.imgUrl}
+                      />
+                    </Link>
                   </div>
                   <div className="layout-container-right-ul-li-content">
                     <Link

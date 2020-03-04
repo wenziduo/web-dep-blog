@@ -28,14 +28,17 @@ class PostList extends React.Component {
                         query: { id: item._id }
                       }}
                     >
-                      <Image
-                        src={item.imgUrl}
-                        thumbnail
-                        style={{ cursor: 'pointer', width: 100, height: 100 }}
-                      />
+                      <div style={{ overflow: 'hidden', padding: 3, border: '1px solid #EEE', borderRadius: '50%' }}>
+                        <Image
+                          src={item.imgUrl}
+                          roundedCircle
+                          alt="图片加载失败"
+                          style={{ cursor: 'pointer', width: 83, height: 83 }}
+                        />
+                      </div>
                     </Link>
                   </div>
-                  <div style={{ flex: 1, marginLeft: 5 }}>
+                  <div style={{ flex: 1, marginLeft: 15 }}>
                     <h3>
                       <Link
                         href={{
