@@ -29,7 +29,8 @@ class Post extends React.Component {
               color: '#666',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center'
+              justifyContent: 'center',
+              marginTop: 15
             }}
           >
             <span>
