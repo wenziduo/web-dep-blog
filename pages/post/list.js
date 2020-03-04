@@ -33,7 +33,7 @@ class PostList extends React.Component {
                           src={item.imgUrl}
                           roundedCircle
                           alt="图片加载失败"
-                          style={{ cursor: 'pointer', width: 83, height: 83 }}
+                          style={{ cursor: 'pointer', width: 70, height: 70 }}
                         />
                       </div>
                     </Link>
