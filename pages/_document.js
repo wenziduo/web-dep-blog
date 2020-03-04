@@ -11,10 +11,11 @@ export default class MyDocument extends Document {
   }
 
   render() {
-    console.log('document')
     return (
       <html>
         <Head>
+          <title>逗儿瓢个人博客</title>
+          <link rel="icon" href="/app.ico" />
           <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"

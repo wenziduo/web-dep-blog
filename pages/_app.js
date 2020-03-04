@@ -3,7 +3,7 @@ import React from 'react'
 import Header from '../component/Header'
 import { parseCookies } from 'nookies'
 import Main from '../component/Main'
-import { fetchClassifyList, fetchPostList } from '../api'
+import { fetchClassifyList, fetchPostNewList } from '../api'
 import '../public/app.css'
 
 export default class MyApp extends App {
@@ -18,7 +18,7 @@ export default class MyApp extends App {
       pageProps = await Component.getInitialProps({ ctx, router, cookies })
     }
     const resClassifyList = await fetchClassifyList()
-    const resPostList = await fetchPostList({ length: 5 })
+    const resPostList = await fetchPostNewList()
     pageProps.classifyList = resClassifyList.data || []
     pageProps.postList = resPostList.data || []
     return { pageProps }
