@@ -139,16 +139,14 @@ class PostList extends React.Component {
           </ListGroup>
           {
             (page * pageSize) < total &&
-              <Alert variant="success">
-                <div style={{ textAlign: 'center' }}>
-                  {
-                    loadingMore && <Spinner animation="grow" variant="success" />
-                  }
-                  {
-                    !loadingMore && <a onClick={this.handleLoadMore}>加载更多（剩{total - (page * pageSize)}）</a>
-                  }
-                </div>
-              </Alert>
+            <div style={{ textAlign: 'center', padding: '10px 0' }}>
+              {
+                loadingMore && <Spinner animation="grow" variant="success" />
+              }
+              {
+                !loadingMore && <a style={{ color: 'rgb(9, 181, 151)' }} onClick={this.handleLoadMore}>加载更多（剩{total - (page * pageSize)}）</a>
+              }
+            </div>
           }
         </div>
       </div>
