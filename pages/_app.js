@@ -44,7 +44,7 @@ export default class MyApp extends App {
             backgroundColor: '#f8f9fa'
           }}
         >
-          <span>Copyright © 2017 - 2027 逗儿瓢个人博客</span>
+          <span>逗儿瓢个人博客</span>
         </div>
       </Container>
     )
