@@ -119,7 +119,7 @@ class PostList extends React.Component {
                             WebkitBoxOrient: 'vertical',
                             WebkitLineClamp: 3,
                           }}
-                        >{item.text}</span>
+                        >{item.introduction}</span>
                       </Link>
                     </p>
                     <p style={{ textAlign: 'right', color: '#777' }}>

@@ -50,7 +50,7 @@ class MyContainer extends React.Component {
                         minHeight: 30
                       }}
                     >
-                      <span>{(item.text || '').slice(0, 40)}</span>
+                      <span>{(item.introduction || '').slice(0, 40)}</span>
                     </p>
                     <p style={{ textAlign: 'right', margin: 0 }}>
                       <span>

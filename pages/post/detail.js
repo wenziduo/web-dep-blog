@@ -144,7 +144,7 @@ class Post extends React.Component {
                               display: 'inline',
                               cursor: 'pointer',
                             }}
-                          >{(item.text || '').slice(0, 60)}</span>
+                          >{(item.introduction || '').slice(0, 60)}</span>
                         </Link>
                       </div>
                     </div>
