@@ -51,7 +51,7 @@ class Post extends React.Component {
           </h4>
         </div>
         <div style={{ marginTop: 10 }}>
-          <MarkDown dataSouce={postDetail.content} />
+          <MarkDown dataSouce={postDetail.markdown} />
         </div>
         <div>
           {postDetail.prevData.length > 0 && (
