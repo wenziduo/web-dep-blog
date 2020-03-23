@@ -3,10 +3,14 @@ import React from 'react'
 import Header from '../component/Header'
 import { parseCookies } from 'nookies'
 import Main from '../component/Main'
-import { fetchClassifyList, fetchPostNewList } from '../api'
+import { fetchClassifyList, fetchPostNewList, fetchStatisticsAdd } from '../api'
 import '../public/app.css'
 
 export default class MyApp extends App {
+  componentDidMount() {
+    // 统计浏览量
+    fetchStatisticsAdd({ type: 1 })
+  }
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {}
     let cookies = {}

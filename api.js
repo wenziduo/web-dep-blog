@@ -31,3 +31,11 @@ export const fetchClassifyList = async function(data = {}) {
     data
   })
 }
+// 浏览统计vv
+export const fetchStatisticsAdd = async function(data = {}) {
+  return await request({
+    method: 'post',
+    url: '/blog/statistics/create',
+    data
+  })
+}
