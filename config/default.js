@@ -11,4 +11,4 @@
 //                   ''
 //             )
 //       )
-exports.serverIp = '39.105.181.82:8019'
+exports.serverIp = '39.105.181.82:82'
